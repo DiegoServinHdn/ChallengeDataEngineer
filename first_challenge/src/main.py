@@ -87,7 +87,10 @@ if __name__ == '__main__':
 
     # 2
     print("2. Obtener el número de respuestas contestadas y no contestadas:\n")
-    print(number_of_answers(data))
+    respuesta2 = number_of_answers(data)
+    print('Contestadas:\n', respuesta2['answered'])
+    print('')
+    print('No contestadas:\n', respuesta2['not answered'])
     print('\n' * padding)
     # 3
     print("3. Obtener la respuesta con menor número de vistas:\n")
@@ -95,7 +98,11 @@ if __name__ == '__main__':
     print('\n' * padding)
     # 4
     print("4. Obtener la respuesta más vieja y más actual:\n")
-    print(oldest_and_latest_answers(data))
+
+    respuesta4 = oldest_and_latest_answers(data)
+    print('Mas vieja:\n', respuesta4['oldest'])
+    print('')
+    print('Mas actual:\n', respuesta4['latest'])
     print('\n' * padding)
     # 5
     print("5. Obtener la respuesta del owner que tenga una mayor reputación:\n")
